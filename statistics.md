@@ -215,3 +215,35 @@ $$\mathcal{X}^2 \approx \frac{1}{2}(Z_\alpha + \sqrt{2n-1})^2$$
 #### $F$分布
 
 $$F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2, n_1)}$$
+
+to be continued
+
+## 估计量的评选标准
+
+### 无偏性
+
+**定义**：设$\hat{\theta}$是未知参数$\theta$的估计量，若$E(\hat{\theta})=\theta$则称$\hat{\theta}$是$\theta$的无偏估计量
+
+### 有效性
+
+**定义**：设$\hat{\theta_1}=\theta_1(X_1, X_2, \cdots, X_n)$和$\hat{\theta_2}=\theta_2(X_1, X_2, \cdots, X_n)$都是总体参数$\theta$的无偏估计量，且$$D(\hat{\theta_1}) < D(\hat{\theta_2})$$
+则称$\hat{\theta_1}$比$\hat{\theta_2}$更有效
+
+#### 罗—克拉美（Rao-Cramer）不等式
+
+若$\hat{\theta}$是参数$\theta$的无偏估计量，则$$D(\hat{theta}) \ge \frac{1}{nE[\frac{\partial}{\partial\theta}ln \  p(X,\theta)]^2}=D_0(\theta)$$
+
+其中$p(x,\theta)$是总体$X$的分布律或概率密度，称$D_0(\theta)$为方差的下界。
+
+当$D(\hat{\theta})=D_0(\theta)$时，称$\hat{\theta}$为$\theta$的达到方差下界的无偏估计量，此时称$\hat{\theta}$为最有效的估计量，简称有效估计量
+
+### 一致性
+
+**定义**：设$\hat{\theta}=\theta(X_1, X_2, \cdots, X_n)$是总体参数$\theta$的估计量。若对于任意的$\theta \in \Theta$，当$n\to \infty$时，$\hat{\theta}$以概率收敛于$\theta$，即对于任意正数$\epsilon$有$\lim\limits_{n\to \infty}P(|\hat{\theta}-\theta|\ge \epsilon)=0$，则称$\hat{\theta}$是总体参数$\theta$的一致估计量
+
+#### 关于一致性的两个常用结论
+
+1. 样本$k$阶矩是总体$k$阶矩的一致估计量（由大数定律证明）
+2. 设$\hat{\theta}$是$\theta$的无偏估计量且$\lim\limits_{n\to \infty}D(\hat{\theta})=0$，则$\hat{\theta}$是$\theta$的一致估计量（由切比雪夫不等式证明）
+
+一般，矩估计法得到的估计量为一致估计量
