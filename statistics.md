@@ -216,6 +216,19 @@ $$\mathcal{X}^2 \approx \frac{1}{2}(Z_\alpha + \sqrt{2n-1})^2$$
 
 $$F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2, n_1)}$$
 
+## 抽样分布定理
+
+**定理1**：设$X_1,X_2,\cdots,X_n$是取自正态总体$N\sim (\mu, \sigma^2)$的样本，则有
+1. 样本均值$\overline{X}\sim N(\mu, \frac{\sigma^2}{n})$
+2. 样本均值$\overline{X}$与样本方差$S^2$相互独立
+3. 随机变量$$\frac{(n-1)S^2}{\sigma^2}=\frac{\sum_{i=1}^n(X_i-\overline{X})^2}{\sigma^2}\sim\mathcal{X}^2(n-1)$$
+
+**定理2**：设$X_1,X_2,\cdots,X_n$是取自正态总体$N(\mu, \sigma^2)$的样本，$\overline{X}$和$S^2$分别为样本均值和样本方差，则有$$\frac{\overline{X}-\mu}{S/\sqrt{n}}\sim t(n-1)$$
+
+**定理3（两个总体样本均值差的分布）**：设$X\sim N(\mu_1,\sigma^2)$,$Y\sim N(\mu_2, \sigma^2)$且$X$与$Y$独立，$X_1, X_2, \cdots, X_{n_1}$是取自$X$的样本，$Y_1, Y_2, \cdots, Y_{n_2}$是取自$Y$的样本，$\overline{X}$和$\overline{Y}$分别是这两个样本的样本均值，$S_1^2$和$S_2^2$分别是这两个样本的样本方差，则有$$\frac{\overline{X}-\overline{Y}-(\mu_1-\mu_2)}{\sqrt{\frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}}\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\sim t(n_1+n_2-2)$$
+
+**定理4（两个总体样本方差比的分布）**：$X\sim N(\mu_1,\sigma_1^2)$,$Y\sim N(\mu_2,\sigma_2^2)$且$X$与$Y$独立，$X_1, X_2, \cdots, X_{n_1}$是取自$X$的样本，$Y_1, Y_2, \cdots, Y_{n_2}$是取自$Y$的样本，$\overline{X}$和$\overline{Y}$分别是这两个样本的样本均值，$S_1^2$和$S_2^2$分别是这两个样本的样本方差，则有$$\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\sim F(n_1-1,n_2-1)$$
+
 to be continued
 
 ## 估计量的评选标准
