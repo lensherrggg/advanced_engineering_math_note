@@ -229,6 +229,87 @@ $$F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2, n_1)}$$
 
 **定理4（两个总体样本方差比的分布）**：$X\sim N(\mu_1,\sigma_1^2)$,$Y\sim N(\mu_2,\sigma_2^2)$且$X$与$Y$独立，$X_1, X_2, \cdots, X_{n_1}$是取自$X$的样本，$Y_1, Y_2, \cdots, Y_{n_2}$是取自$Y$的样本，$\overline{X}$和$\overline{Y}$分别是这两个样本的样本均值，$S_1^2$和$S_2^2$分别是这两个样本的样本方差，则有$$\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\sim F(n_1-1,n_2-1)$$
 
+## 大数定律
+
+**定义**：设$Y_1, Y_2, \cdots, Y_n$为一个随机变量序列，$a$是一个常数，若对任一正数$\epsilon > 0$，总成立$$\lim_{n->\infty}P\{|Y_n-a| < \epsilon\} = 1$$
+
+则称随机变量序列$Y_1, Y_2, \cdots, Y_n$依概率收敛于$a$，记为$$Y_n \stackrel{P}{\rightarrow} a(n\rightarrow \infty)$$
+
+### 性质
+
+1. 设$Y_n \stackrel{P}{\rightarrow} a(n\rightarrow \infty)$，$g(x)$是连续函数，则$$g(Y_n) \stackrel{P}{\rightarrow} g(a) (n\rightarrow \infty)$$
+2. 设$X_n \stackrel{P}{\rightarrow} a(n\rightarrow \infty), Y_n \stackrel{P}{\rightarrow} b(n\rightarrow \infty), g(x, y)$是二元连续函数，则$$g(X_n, Y_n) \stackrel{P}{\rightarrow} g(a, b) (n\rightarrow \infty)$$
+
+### 三个常见的大数定律
+
+#### 伯努利大数定律
+
+设n重伯努利试验中事件A发生的次数为$\mu_n$，A在每次实验中发生的概率为$p$，则对任给的$\epsilon > 0$，总成立$$\lim_{n\rightarrow \infty}P\{|\frac{\mu_n}{n}-p| < \epsilon\} = 1$$
+
+即$$\frac{\mu_n}{n}\stackrel{P}{\rightarrow}p(n\rightarrow \infty)$$
+
+##### 伯努利大数定律的意义
+
+在概率的统计意义中，事件A发生的频率$\frac{n_A}{n}$稳定于p
+
+#### 切比雪夫大数定律的特殊情形
+
+设随机变量序列$X_1, X_2, \cdots $相互独立，并且具有相同的数学期望和方差，$E(X_i)=\mu,D(X_i)=\sigma^2, i=1, 2, \cdots$，则对任给的$\epsilon > 0$总成立$$\lim_{n\rightarrow \infty}P\{|\frac{1}{n}\sum_{i=1}^nX_i-\mu|<\epsilon\}=1$$
+
+即$$\frac{1}{n}\sum_{i=1}^nX_i\stackrel{P}{\rightarrow}\mu(n\rightarrow \infty)$$
+
+##### 定理的意义
+
+具有相同数学期望和方差的独立随机变量序列的算术平均值依概率收敛于数学期望.当n足够大时, 实验结果的算术平均几乎是一常数
+
+#### 切比雪夫大数定律的一般情形
+
+设随机变量序列$X_1, X_2, \cdots $相互独立，并且具有数学期望$E(X_i)=\mu_i$,并且都具有被同一常数$C$限制的方差$D(X_i)=\sigma^2 < C, i=1, 2, \cdots$，则对任给的$\epsilon > 0$总成立$$\lim_{n\rightarrow \infty}P\{|\frac{1}{n}\sum_{i=1}^nX_i-\frac{1}{n}\sum_{i=1}^{n}\mu_i|<\epsilon\}=1$$
+
+即$$\frac{1}{n}\sum_{i=1}^nX_i\stackrel{P}{\rightarrow}\frac{1}{n}\sum_{i=1}^n\mu_i(n\rightarrow \infty)$$
+
+##### 意义
+
+定理表明，独立随机变量序列$\{X_n\}$，若方差有共同的上界，则$\frac{1}{n}\sum_{i=1}^nX_i$与数学期望$\frac{1}{n}\sum_{i=1}^{n}E(X_i)$偏差很小的概率接近1
+
+#### 辛钦大数定律
+
+设随机变量序列$X_1, X_2, \cdots $相互独立，服从同一分布，具有相同的数学期望$E(X_i)=\mu, i=1,2,\cdots$,则对于任给正数$\epsilon > 0$，总成立$$\lim_{n\rightarrow \infty}P\{|\frac{1}{n}\sum_{i=1}^{n}X_i-\mu|<\epsilon\}=1$$
+
+**推论**：设随机变量序列$X_1, X_2, \cdots $相互独立，服从同一分布，具有相同的k阶矩$E(X_i^k)=\mu_k, i=1,2,\cdots$,则对于任给正数$\epsilon > 0$，总成立$$\lim_{n\rightarrow \infty}P\{|\frac{1}{n}\sum_{i=1}^{n}X_i^k-\mu_k|<\epsilon\}=1$$
+
+大数定律表达了随机现象最根本的性质之一：平均结果的稳定性
+
+## 中心极限定理
+
+客观实际中，许多随机变量是由大量 相互独立的偶然因素的综合影响所形成，每一个微小因素，在总的影响中所起的作用是很小的，但总起来，却对总和有显著影响，这种随机变量往往近似地服从正态分布。
+
+由于无穷个随机变量之和可能趋于$\infty$，故我们不研究n个随机变量之和本身而考虑它的标准化的随机变量$$Z_n=\frac{\sum_{k=1}^nX_k-E(\sum_{k=1}^nX_k)}{\sqrt{D(\sum_{k=1}^nX_k})}$$
+
+的极限分布
+
+### 定理1（独立同分布下的中心极限定理）
+
+设$X_1,X_2,\cdots$是独立同分布的随机变量序列，且$E(X_i)=\mu, D(X_i)=\sigma^2,i=1,2,\cdots$则$$\lim_{n\rightarrow \infty}P\{\frac{\sum_{i=1}{n}X_i-n\mu}{\sigma\sqrt{n}}\le x\}=\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}}e^{-t^2/2}dt$$
+
+**定理表明**：当n充分大时，标准化随机变量$\frac{\sum_{i=1}{n}X_i-n\mu}{\sigma\sqrt{n}}$近似服从正态分布。
+
+由此可知，对独立随机变量序列，不管服从什么分布，只要是同分布且有有限的期望和方差，则n充分大时随机变量之和$\sum_{i=1}^nX_i$近似服从正态分布$N(n\mu,n\sigma^2)$
+
+### 定理2（德莫佛——拉普拉斯中心极限定理）
+
+设n重伯努利试验中事件A发生的次数为$\mu_n$，事件A在每次实验中发生的概率为$p$，则对于任给实数$x$总成立$$\lim_{n\rightarrow \infty}P\{\frac{\mu_n-np}{\sqrt{np(1-p)}}\le x\}= \int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
+
+定理表明：若$Y$服从二项分布，当n很大时，$Y_n$的标准化随机变量$\frac{Y_n-np}{\sqrt{np(1-p)}}$近似服从标准正态分布。
+
+由此可知，当n很大，$0<p<1$是一个定值时，服从二项分布$B(n,p)$的随机变量$Y_n$近似服从正态分布$N(np,np(1-p))$
+
+### 定理3（李雅普诺夫中心极限定理）
+
+设$X_1,\cdots,X_n,\cdots$相互独立，且$EX_k=\mu_k,DX_k=\sigma_k^2,(k=1,2,\cdots)$，记$B_n^2=\sum_{k=1}^{n}\sigma_k^2$，若存在正数$\delta$使得当$n\rightarrow \infty$时，$\frac{1}{B_n^{2+\delta}}\sum_{k=1}^nE\{|X_k-\mu_k|^{2+\delta\}}\rightarrow 0$,则$$\lim_{n\rightarrow \infty}P\{\frac{\sum_{k=1}^{n}X_k-\sum_{k=1}^n\mu_k}{B_n}\le x\}=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{x}e^{-\frac{t^2}{2}}dt$$
+
+## 参数估计的意义和种类
+
 to be continued
 
 ## 估计量的评选标准
