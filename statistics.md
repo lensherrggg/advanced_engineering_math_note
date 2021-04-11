@@ -310,7 +310,74 @@ $$F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2, n_1)}$$
 
 ## 参数估计的意义和种类
 
-to be continued
+### 参数估计问题
+
+数理统计的基本问题是根据样本提供的信息对总体的分布及分布的某些数字特征做推断。这个问题中的一类是总体分布的类型已知，而它的某些参数未知，根据所得样本对这些参数做推断，这类问题称为参数估计。
+
+### 未知参数的估计量和估计值
+
+设一个总体X，其分布函数$F(x, \theta)$，其中$\theta$为未知参数($\theta$也可以是未知向量）。现在从该总体抽样，得到样本$X_1, X_2, \cdots, X_n$，样本值$x_1, x_2, \cdots, x_n$
+
+若构造出适当的统计量$g(X_1, X_2, \cdots, X_n)$来估计$\theta$，则称$g(X_1, X_2, \cdots, X_n)$为$\theta$的估计量，将样本值$x_1, x_2, \cdots, x_n$代入，则称$g(x_1, x_2, \cdots, x_n)$为$\theta$的估计值。
+
+### 参数估计的种类
+
++ 点估计：估计未知参数的值
++ 区间估计：估计未知参数的取值范围，并使此范围包含未知参数真值的概率为给定的值。
+
+## 点估计的求法
+
+### 矩估计法
+
+理论依据：辛钦大数定律及其推论
+
+方法：用样本k阶矩$A_k=\frac{1}{n}\sum_{i=1}^nX_i^k$估计总体k阶矩$\mu_k=E(X^k)$，建立含有待估参数的方程，从而解出待估参数。
+
+步骤：设总体的分布函数的形式已知，待估参数为$\theta_1, \theta_2, \cdots, \theta_k$，总体的前k阶矩存在
+
+1. 求总体的前k阶矩，一般是这k个参数的函数记为$$E(X^r)=\mu_r(\theta_1, \theta_2, \cdots, \theta_k), r=1, 2, \cdots, k$$样本$X_1, X_2, \cdots, X_n$的前k阶矩记为$$A_r=\frac{1}{m}\sum_{i=1}^{n}X_i^r,r=1,2,\cdots, k$$
+2. 令$\mu_r(\theta_1, \theta_2, \cdots, \theta_k)=\frac{1}{n}\sum_{i=1}^nX_i^r,r=1,2,\cdots, k$，这是含未知参数$\theta_1, \theta_2, \cdots, \theta_k$的k个方程构成的方程组
+3. 解这个方程组，得到k个统计量称为未知参数$\theta_1, \theta_2, \cdots, \theta_k$的矩估计量，代入样本值得到k个数称为矩估计值。
+
+### 极大似然估计法
+
+理论依据：极大似然原理
+
+一般说，若时间A发生的概率与参数$\theta \in \Theta$有关，$\theta$取之不同，P(A)也不同。则应记事件A发生的概率为$P(A|\theta)$。若一次实验事件A发生了，可认为此时的$\theta$值应当是$\Theta$中使$P(A|\theta)$达到最大的那个，这就是极大似然原理。
+
+似然函数：$X_1, X_2, \cdots, X_n$是取自总体X的样本，$x_1, x_2, \cdots, x_n$是样本值
+
+1. X是离散型总体，其分布律为$$P\{X=x\}=p(x, \theta_1, \theta_2, \cdots, \theta_k)$$,其中$\theta_1, \theta_2, \cdots, \theta_k$为为止待估参数，则样本的联合分布律为
+$$\begin{aligned}
+P\{X_1=x_1, X_2=x_2, \cdots, X_n=x_n\}
+&=p(x_1, \theta_1, \theta_2, \cdots, \theta_k)p(x_2, \theta_1, \theta_2, \cdots, \theta_k)\cdots p(x_n, \theta_1, \theta_2, \cdots, \theta_k) \\&=\prod_{i=1}^np(x_i, \theta_1, \theta_2, \cdots, \theta_k)
+\end{aligned}
+$$
+记$L(\theta_1, \theta_2, \cdots, \theta_k)=\prod_{i=1}^np(x_i, \theta_1, \theta_2, \cdots, \theta_k)$为样本的似然函数
+
+2. X是连续型总体，其概率密度为$f(x, \theta_1, \theta_2, \cdots, \theta_k)$则称$L(\theta_1, \theta_2, \cdots, \theta_k)=\prod_{i=1}^nf(x_i, \theta_1, \theta_2, \cdots, \theta_k)$为其样本的似然函数。
+似然函数值的大小实质上反映的是该样本值出现的可能性的大小。
+
+#### 极大似然估计的方法
+
+对给定样本值$x_1, x_2, \cdots, x_n$，选取$\theta_1, \theta_2, \cdots, \theta_k$使其似然函数$L(\theta_1, \theta_2, \cdots, \theta_k)$达到最大值，即求$\hat{\theta_i}=\theta_i(x_1, x_2, \cdots, x_n),i=1, 2, \cdots, k$使得$L(\hat{\theta_1}, \hat{\theta_2}, \cdots, \hat{\theta_k})=max L(\theta_1, \theta_2, \cdots, \theta_k)$
+
+这样得到的估计值称为未知参数$\theta_1, \cdots, \theta_k$的极大似然估计值，对应的统计量称为极大似然估计量。
+
+步骤：
+
+1. 由总体分布和所给样本求得似然函数$$L(\theta_1, \theta_2, \cdots, \theta_k)=\prod_{i=1}^nf(x_i, \theta_1, \theta_2, \cdots, \theta_k)$$
+2. 求似然函数$L(\theta_1, \theta_2, \cdots, \theta_k)$的对数函数$$ln L(\theta_1, \theta_2, \cdots, \theta_k)=ln\prod_{i=1}^nf(x_i, \theta_1, \theta_2, \cdots, \theta_k)$$
+3. 解方程组$$\begin{cases}\frac{\partial lnL(\theta_1, \theta_2, \cdots, \theta_k)}{\partial \theta_1}=0\\\frac{\partial lnL(\theta_1, \theta_2, \cdots, \theta_k)}{\partial \theta_2}=0\\ \cdots \\ \frac{\partial lnL(\theta_1, \theta_2, \cdots, \theta_k)}{\partial \theta_k}=0 \end{cases}$$
+4. 得未知参数$\theta_1, \cdots, \theta_k$的极大似然估计值$$\begin{cases}\hat{\theta_1}=\hat{\theta_1}(x_1, x_2, \cdots, x_n) \\ \cdots \\ \hat{\theta_k}=\hat{\theta_k}(x_1, x_2, \cdots, x_n) \end{cases}$$
+
+说明：
+
+1. 可证明极大似然估计具有下述性质
+
+设$\theta$的函数$g=g(\theta)$是$\Theta$的实值函数，且有唯一反函数，若$\hat{\theta}$是$\theta$的极大似然估计，则$g(\hat{\theta})$也是$g(\theta)$的极大似然估计。此性质称为极大似然估计的不变性。
+
+2. 当似然函数不是可微函数时，需用极大似然原理来求待估参数的极大似然估计。
 
 ## 估计量的评选标准
 
