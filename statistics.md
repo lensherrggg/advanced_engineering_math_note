@@ -171,7 +171,7 @@ $\mathcal{X}^2$分布的概率密度图形如下
 
 **性质2**：设$\mathcal{X}_1^2\sim \mathcal{X}^2(n_1)$，$\mathcal{X}_2^2\sim \mathcal{X}^2(n_2)$，且$\mathcal{X}_1^2$与$\mathcal{X}_2^2$相互独立，则$$\mathcal{X}_1^2+\mathcal{X}_2^2\sim \mathcal{X}^2(n_1+n_2)$$
 
-这称为$\mathcal{X}^2\$分布的可加性
+这称为$\mathcal{X}^2$分布的可加性
 
 #### $t$分布
 
