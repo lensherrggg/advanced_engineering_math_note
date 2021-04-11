@@ -447,3 +447,82 @@ $$
 注：关于原假设与备择假设的选取
 
 原假设和备择假设地位应当平等。但控制犯一类错误的概率$\alpha$的原则下使得采取拒绝$H_0$的决策变得较为慎重，即$H_0$得到特别的保护。因而通常把有把握的有经验的结论作为原假设，或者尽可能使后果严重的错误成为第一类错误。
+
+## 正态总体的假设检验
+
+### 单一正态总体均值$\mu$的假设检验
+
+设总体$X\sim N(\mu, \sigma^2)$，$X_1, X_2, \cdots, X_n$是取自$X$的样本，样本均值$\overline{X}$, 样本方差$S^2$
+
+1. 已知$\sigma^2=\sigma_0^2$时，总体均值$\mu$的假设检验
+
++ $\mu$的双边检验
+原假设$H_0:\mu=\mu_0$,备择假设$H_1:\mu\neq \mu_0$
+取检验统计量$U=\frac{\overline{X}-\mu_0}{\sigma_0 / \sqrt{n}}$
+则拒绝域为：$W=\{|U|\ge z_{\alpha/2}\}$
+
++ $\mu$的单边检验
+a. 原假设$H_0:\mu \le \mu_0$，备择假设$H_1:\mu > \mu_0$
+检验统计量$U=\frac{\overline{X}-\mu_0}{\sigma_0 / \sqrt{n}}$
+拒绝域为：$W=\{U \ge z_{\alpha}\}$
+b. 原假设$H_0:\mu \ge \mu_0$，备择假设$H_1:\mu < \mu_0$
+检验统计量$U=\frac{\overline{X}-\mu_0}{\sigma_0 / \sqrt{n}}$
+拒绝域为：$W=\{U \le -z_{\alpha}\}$
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411210217.png)
+
+2. $\sigma^2$未知时，总体均值$\mu$的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411210629.png)
+
+### 单一正态总体方差$\sigma^2$的假设检验
+
++ 已知$\mu=\mu_0$时，总体方差$\sigma^2$的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411211031.png)
+
++ $\mu$未知时，总体方差$\sigma^2$的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411211220.png)
+
+### 两个正态总体均值的假设检验
+
+$X_1, X_2, \cdots, X_{n_1}$为取自总体$N(\mu_1, \sigma_1^2)$的样本
+
+$Y_1, Y_2, \cdots, Y_{n_2}$为取自总体$N(\mu_2, \sigma_2^2)$的样本
+
+且两总体相互独立
+
+$\overline{X}, S_1^2$；$\overline{Y}, S_2^2$分别表示两样本的样本均值与样本方差
+
++ 已知$\sigma_1^2,\sigma_2^2$时，总体均值的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411211701.png)
+
++ $\sigma_1^2,\sigma_2^2$未知，但$\sigma_1^2=\sigma_2^2$时，总体均值的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411211802.png)
+
+### 两个正态总体方差的假设检验
+
++ 已知$\mu_1, \mu_2$时，总体方差的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411212334.png)
+
++ $\mu_1,\mu_2$未知时，总体方差的假设检验
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411212419.png)
+
+### （0-1）总体参数p的大样本检验
+
+已知总体X服从（0-1）分布，其分布律为$$f(x;p)=p^x(1-p)^{1-x}, x=0,1$$则$E(X)=p, D(X)=p(1-p)$
+
+现抽取容量为$n\quad (n>30)$的样本$X_1, X_2, \cdots, X_n$，样本均值为$\overline{X}$
+
++ 对参数p的双边检验
+原假设$H_0:p=p_0$，备择假设$H_1:p\neq p_0$
+当原假设$H_0:p=p_0$为真时，由独立同分布中心极限定理可知$$U=\frac{\overline{X}-p_0}{\sqrt{\frac{p(1-p)}{n}}}\stackrel{近似}{\sim}N(0,1)$$
+因为$\overline{X}$是p的达到方差界的无偏估计，所以$U$的值应较集中在零附近，而$H_0:p=p_0$的拒绝域应体现为$|U|$偏大，即拒绝域应形如$W=\{|U|\ge K\}$
+设显著性水平为$\alpha$，由$$U=\frac{\overline{X}-p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}\stackrel{近似}{\sim}N(0,1)$$得：$K=z_{\alpha/2}, W=\{|U| \ge z_{\alpha/2}\}$
+
+![](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/20210411213339.png)
