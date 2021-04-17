@@ -725,3 +725,36 @@ $$
 双因素方差分析表
 
 ![image-20210417165131919](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417165131919.png)
+
+## 有交互作用的双因素试验的方差分析
+
+双因素有重复（有交互作用）试验资料表
+
+![image-20210417165734194](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417165734194.png)
+
+![image-20210417165808744](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417165808744.png)
+
+![image-20210417165839314](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417165839314.png)
+
+处理方法：把交互作用当成一个新因素处理，即每种搭配$A_iB_j$看作一个总体$X_{ij}$
+
+基本假设：
+
+1. $X_{ij}$相互独立
+2. $X_{ij} \sim N(\mu_{ij}, \sigma^2)$，（方差齐性）
+
+记$\mu=\frac{1}{ab}\sum_{i=1}^a\sum_{j=1}^b\mu_{ij}$，所有期望值的总平均$X_{ijk}-\mu_{ij} \sim N(0, \sigma^2)$反映随机误差记为$\epsilon_{ijk}$，由$X_{ijk}-\overline{X_{ij\cdot}}$反映，$\alpha_i=\frac{1}{b}\sum_{j=1}^b\mu_ij-\mu=\mu_{i\cdot}-\mu$的无偏估计为$\frac{1}{b}\sum_{j=1}^bX_{ij\cdot}-\frac{1}{abn}\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^nX_{ijk}=\overline{X_{i \cdot \cdot}}-\overline{X}$反映$A_i$的效应，
+
+$\beta_j=\frac{1}{a}\sum_{i=1}^a\mu_{ij}-\mu=\mu_{\cdot i}-\mu$的无偏估计为$\frac{1}{a}\sum_{i=1}^aX_{ij\cdot}-\frac{1}{abn}\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^nX_{ijk}=\overline{X_{\cdot j \cdot}} -\overline{X}$反映$B_j$的效应$(\alpha \beta)_{ij}=\mu_{ij} - \mu - \alpha_i - \beta_j$的无偏估计为$\overline{X_{ij\cdot}} - \overline{X_{i\cdot}} - \overline{X_{\cdot j}} + \overline{X}$反映交互效应
+
+于是$\mu_{ij} = \mu+\alpha_i+\beta_j+(\alpha\beta)_{ij}，$$X_{ijk}=\mu_{ij}+\epsilon_{ijk}=\mu+\alpha_i+\beta_j+(\alpha \beta)_{ij}+\epsilon_{ijk}$
+
+![image-20210417170855987](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417170855987.png)
+
+![image-20210417170909530](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417170909530.png)
+
+![image-20210417170929602](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417170929602.png)
+
+![image-20210417170945210](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417170945210.png)
+
+![image-20210417171009980](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417171009980.png)
