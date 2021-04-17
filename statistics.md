@@ -627,3 +627,101 @@ $$
 2. $\overline{X}_{\cdot j}$是$\mu_j$的无偏估计，$j=1,2,\cdots, s$
 
 可以证明，对每个j，$\overline{X}_{\cdot j}$也是$\mu_j$的最小二乘估计
+
+## 双因素方差分析
+
+假定条件：
+
+1. 每个总体都服从正态分布
+2. 各个总体的方差必须相同
+3. 观察值是独立的
+
+### 双因素方差分析的数据结构
+
+![image-20210417164947190](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417164947190.png)
+
++ $\overline{X}_{i\cdot}$是因素A的第i个水平下的各观察值的平均值$\overline{X}_{i\cdot}=\frac{\sum_{j=1}^bx_{ij}}{b} (i=1,2,\cdots, a)$
++ $\overline{X}_{\cdot j}$是因素B的第j个水平下的各观察值的平均值$\overline{X}_{\cdot j}=\frac{\sum_{i=1}^ax_{ij}}{a} (j=1,2,\cdots, b)$
++ $\overline{\overline{X}}$是全部kr个样本数据的总平均值$\overline{\overline{X}}=\frac{\sum_{i=1}^a\sum_{j=1}^bx_{ij}}{ab}$
+
+提出假设：
+
+1. 因素A：$H_0: \mu_1=\mu_2=\cdots=\mu_i=\cdots=\mu_a(\mu_i为第i个水平的均值), H_1:\mu_i(i=1,2,\cdots, a)不全相等$
+2. 因素B：$H_0: \mu_1=\mu_2=\cdots=\mu_j=\cdots=\mu_b(\mu_j为第j个水平的均值), H_1:\mu_j(j=1,2,\cdots, b)不全相等$
+
+构造检验的统计量
+
+1. 检验$H_0$是否成立，需要确定检验的统计量
+2. 构造统计量需要计算
+    + 总离差平方和
+    + 水平项平方和
+    + 误差项平方和
+    + 均方
+
+计算总离差平方和SST
+
++ $\overline{\overline{x}}$全部观察值$x_{ij} (i=1,2,\cdots, a;j=1,2,\cdots, b)$，与总平均值的离差平方和
+
++ 反映全部观察值的离散情况
+
++ 计算公式为
+  $$
+  SST=\sum_{i=1}^a\sum_{j=1}^b(x_{ij}-\overline{\overline{x}})^2
+  $$
+
+计算SSA、SSB和SSE和各个平方和的关系
+
+![image-20210417165105805](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417165105805.png)
+
+计算均方MS
+
+1. 各离差平方和的大小与观察值的多少有关，为消除观察值多少对离差平方和大小的影响，需要将其平均，这就是均方，也称为方差
+2. 计算方法是用离差平方和除以相应的自由度
+3. 三个平方和的自由度分别是
+   + 总离差平方和*SST*的自由度为 *ab*-1
+   + 因素*A*的离差平方和*SSA*的自由度为 *a*-1
+   + 因素*B*的离差平方和*SSB*的自由度为 *b*-1
+   + 随机误差平方和*SSE*的自由度为 $(a-1)\times(b-1) $
+
+4. 因素A的均方，记为MSA，计算公式为
+   $$
+   MSA=\frac{SSA}{a-1}
+   $$
+
+5. 因素B的均方，记为MSB，计算公式为
+
+$$
+MSB=\frac{SSB}{b-1}
+$$
+
+6. 随机误差项的均方，记为MSE，计算公式为
+
+$$
+MSE=\frac{SSE}{(a-1)(b-1)}
+$$
+
+检验计算的统计量F
+
+1. 为检验因素A的影响是否显著，采用下面的统计量
+
+$$
+F_A=\frac{MSA}{MSE}\sim F(a-1, (a-1)(b-1))
+$$
+
+2. 为检验因素B的影响是否显著，采用下面的统计量
+
+$$
+F_B=\frac{MSB}{MSE}\sim F(b-1, (a-1)(b-1))
+$$
+
+统计决策
+
+将统计量的值$F$与给定的显著性水平$\alpha$的临界值$F_\alpha$进行比较，作出接受或拒绝原假设$H_0$的决策
+
+1. 根据给定的显著性水平$\alpha$在$F$分布表中查找相应的临界值$F_\alpha$
+2. 若$F_A\ge F_\alpha$，则拒绝原假设$H_0$，表明均值之间的差异是显著的，即所检验的因素A对观察值有显著影响
+3. 若$F_B \ge F_\alpha$，则拒绝原假设$H_0$，表明均值之间有显著差异，即所检验的因素B对观察值有显著影响
+
+双因素方差分析表
+
+![image-20210417165131919](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210417165131919.png)
