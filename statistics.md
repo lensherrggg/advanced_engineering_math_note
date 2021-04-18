@@ -941,3 +941,95 @@ F_{因素}=\frac{MS_{因素}}{MS_{误差}}
 $$
 
 5. 列方差分析表，作$F$检验。
+
+
+
+## 一元线性回归
+
+回归函数：当可控变量$X$和随机变量$Y$之间存在回归关系时，$Y$的数学期望$E(Y)$是可控变量$X$的取值$x$的函数，记为$\mu(x)$，即$E(Y)=\mu(x)$，称$\mu(x)$为回归函数。
+
+一元线性回归数学模型的两个前提：
+
+1. 线性相关假设：设$\mu(x)=a+bx$，这里a、b是与可控变量X的取值x无关的未知参数
+2. 随机变量Y服从正态分布，$Y\sim N(\mu(x), \sigma^2)$，这里$\sigma^2$是与x无关的未知参数。
+
+设随机变量$\epsilon=Y-\mu(x)$，称其为随机误差，则$\epsilon\sim N(0, \sigma^2)$
+
+线性回归的任务：根据实验的观测值求出$a,b,\sigma^2$的估计量：$\hat{a}, \hat{b}, \hat{\sigma^2}$，从而对任何x得回归函数的估计量：$\hat{y}=\hat{a}+\hat{b}x$（称其为随机变量Y依变量X的线性回归方程，其直线称为回归直线）,从而为进一步的预测和控制提供依据。
+
+### 未知参数$a$，$b$和$\sigma^2$的点估计
+
+#### 最小二乘法
+
+根据偏差的平方和为最小来选择待估参数的方法称为最小二乘法。由此方法得到的估计量称为最小二乘估计。
+
+即对样本观察值：$(x_1, y_1), (x_2, y_2), \cdots, (x_n, y_n)$，求使得二元函数$Q(a,b)=\sum_{i=1}^n\epsilon_i^2=\sum_{i=1}^n(y_i-a-bx_i)^2$最小的a、b估计量
+
+令
+$$
+\begin{cases}
+\frac{\partial Q}{\partial a}=-2\sum_{i=1}^n(y_i-a-bx_i)=0 \\
+\frac{\partial Q}{\partial b}=-2\sum_{i=1}^n(y_i-a-bx_i)x_i=0
+\end{cases}
+$$
+即
+$$
+\begin{cases}
+na+(\sum_{i=1}^nx_i)b=\sum_{i=1}^ny_i\\
+(\sum_{i=1}^nx_i)a+(\sum_{i=1}^nx_i^2)b=\sum_{i=1}^nx_iy_i
+\end{cases}
+$$
+用克莱姆法则借这个二元线性方程组得a、b的最小二乘估计：$\hat{b}=\frac{L_{xy}}{L_{xx}}$，$\hat{a}=\overline{y}-\hat{b}\overline{x}$
+
+从而得到回归方程$\hat{y}=\hat{a}+\hat{b}x$
+
+可以证明：
+
+1. $\hat{a}$，$\hat{b}$也是a、b的极大似然估计
+2. $\hat{a}$，$\hat{b}$是$y_1, y_2, \cdots, y_n$的线性函数
+3. $\hat{a}$，$\hat{b}$是a,b的无偏估计，且是a,b的一切线性无偏估计量中方差最小的估计量。
+
+称$\hat{y_i}=\hat{a}+\hat{b}x_i$为观察值$y_i$的回归值$(i=1,2,\cdots, n)$
+
+由a、b的最小二乘估计的推导过程可得：
+
+回归直线的两个重要特征：
+
+1. $y_i$偏离回归值$\hat{y_i}$的总和为零，即
+
+$$
+\sum_{i=1}^n(y_i-\hat{y_i})=0
+$$
+
+2. 平面上n个点$(x_1, y_1), (x_2, y_2), \cdots, (x_n, y_n)$的几何中心$(\overline{x}, \overline{y})$落在回归直线上，即
+
+$$
+\overline{y}=\hat{a}+\hat{b}\overline{x}
+$$
+
+
+
+未知参数$\sigma^2$的估计
+
+首先给出残差平方和（剩余平方和）和回归平方和的概念
+
+残差平方和：$Q=\sum_{i=1}^n(y_i-\hat{y_i})^2=\sum_{i=1}^n(y_i-\hat{a}-\hat{b}x_i)^2$
+
+回归平方和：$U=\sum_{i=1}^n(\hat{y_i}-\overline{y})^2$
+
+可以证明：$\frac{Q}{\sigma^2}\sim \mathcal{X}^2(n-2)$
+
+于是$E(\frac{Q}{\sigma^2})=n-2$，即$E(\frac{Q}{n-2})=\sigma^2$
+
+所以$\hat{\sigma}^2=\frac{Q}{n-2}$是$\sigma^2$的无偏估计
+
+
+
+残差平方和Q的计算方法
+
+定理（平方和分解公式）：对容量为n的样本$(x_1, y_1), (x_2, y_2), \cdots, (x_n, y_n)$总成立
+$$
+\sum_{i=1}^n(y_i-\overline{y})^2=\sum_{i=1}^n(y_i-\hat{y}_i)^2+\sum_{i=1}^n(\hat{y}_i-\overline{y})^2
+$$
+即：$L_{yy}=Q+U$
+
