@@ -1,5 +1,147 @@
 # 矩阵论
 
+## 线性空间
+
+![image-20210530150819265](/Users/rui/Library/Application Support/typora-user-images/image-20210530150819265.png)
+
+![image-20210530150841662](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530150841662.png)
+
+![image-20210530150851146](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530150851146.png)
+
+![image-20210530151336910](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151336910.png)
+
+![image-20210530151348308](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151348308.png)
+
+#### 线性空间的性质
+
+![image-20210530151422615](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151422615.png)
+
+#### 线性空间的基
+
+![image-20210530151453252](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151453252.png)
+
+
+
+![image-20210530151653193](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151653193.png)
+
+![image-20210530151708940](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151708940.png)
+
+![image-20210530151731625](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530151731625.png)
+
+### 基坐标与坐标变换
+
+![image-20210530152751730](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530152751730.png)
+
+![image-20210530152812066](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530152812066.png)
+
+#### 坐标变换公式
+
+![image-20210530152907534](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530152907534.png)
+
+## 线性空间的子空间
+
+![image-20210530153329082](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530153329082.png)
+
+对任意有限维线性空间必有两个**平凡**的子空间：单个零向量构成的子空间及该线性空间本身
+
+#### 子空间的交与和
+
+![image-20210530153656232](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530153656232.png)
+
+![image-20210530153723995](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530153723995.png)
+
+![image-20210530154043551](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154043551.png)
+
+#### 子空间的直和、补充子空间
+
+![image-20210530154110796](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154110796.png)
+
+![image-20210530154130986](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154130986.png)
+
+![image-20210530154312350](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154312350.png)
+
+## 线性映射
+
+![image-20210530154435447](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154435447.png)
+
+![image-20210530154557802](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154557802.png)
+
+![image-20210530154617333](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154617333.png)
+
+![image-20210530154938278](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530154938278.png)
+
+![image-20210530155152099](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530155152099.png)
+
+![image-20210530155359039](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530155359039.png)
+
+## 线性映射的值域、核
+
+![image-20210530155812184](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530155812184.png)
+
+![image-20210530160313094](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530160313094.png)
+
+## 线性变换的矩阵
+
+![image-20210530160353430](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530160353430.png)
+
+![image-20210530160404698](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530160404698.png)
+
+### 线性变换在不同基下矩阵的关系
+
+![image-20210530160602481](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530160602481.png)
+
+![image-20210530161021340](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161021340.png)
+
+![image-20210530161036291](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161036291.png)
+
+## 线性空间的同构
+
+![image-20210530161202836](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161202836.png)
+
+## 线性变换的不变子空间
+
+![image-20210530161238379](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161238379.png)
+
+![image-20210530161415692](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161415692.png)
+
+![image-20210530161555181](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161555181.png)
+
+![image-20210530161614470](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161614470.png)
+
+## 特征值与特征向量
+
+![image-20210530161636716](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161636716.png)
+
+![image-20210530161714984](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161714984.png)
+
+## 矩阵的相似与相似对角化
+
+![image-20210530161754326](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161754326.png)
+
+![image-20210530161905431](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161905431.png)
+
+![image-20210530161947349](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530161947349.png)
+
+![image-20210530162225188](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530162225188.png)
+
+代数重数：指特征多项式=0这个方程的根重数
+
+几何重数：特征子空间即方程$(\lambda I-A)X=0$的维数
+
+### 矩阵（线性变换）的相似对角化
+
+![image-20210530162309369](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530162309369.png)
+
+![image-20210530162321216](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530162321216.png)
+
+![image-20210530162446115](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530162446115.png)
+
+## 线性空间的同构
+
+![image-20210530162650739](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530162650739.png)
+
+
+
 # $\lambda$矩阵
 
 定义：设$a_{ij}(\lambda)(i=1,2,\cdots, m;j=1,2,\cdots, n)$为数域F上的多项式，称
