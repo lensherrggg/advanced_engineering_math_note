@@ -180,3 +180,70 @@ $A(\lambda)$的Smith标准型是唯一的
 ![image-20210529110948406](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210529110948406.png)
 
 ![image-20210529110958335](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210529110958335.png)
+
+![image-20210530141238242](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530141238242.png)
+
+![image-20210530141603345](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530141603345.png)
+
+![image-20210530141641387](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530141641387.png)
+
+### $C^m$空间中标准正交基
+
+![image-20210530141842891](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530141842891.png)
+
+![image-20210530141854439](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530141854439.png)
+
+![image-20210530142009186](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530142009186.png)
+
+#### Schmidt正交化
+
+Schmidt正交化是把非正交基变为正交基
+
+假设是n维空间，先让$x_1$和$x_2$正交，让$x_3$在这两个向量张成的空间作垂线从而使得$x_3$转换成与$x_1$和$x_2$分别正交的向量，以此类推。
+
+![image-20210530143250832](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530143250832.png)
+
+![image-20210530143315201](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530143315201.png)
+
+![image-20210530143325230](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530143325230.png)
+
+### 单位化
+
+![image-20210530143410448](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530143410448.png)
+
+
+
+## 酉空间分解与投影
+
+#### 正交补子空间
+
+![image-20210530144255945](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530144255945.png)
+
+![image-20210530144446033](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530144446033.png)
+
+#### 正交补空间的计算
+
+![image-20210530145047792](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530145047792.png)
+
+![image-20210530145057053](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530145057053.png)
+
+![image-20210530145555090](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530145555090.png)
+
+#### 投影
+
+![image-20210530145704887](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530145704887.png)
+
+#### 点到空间的距离与最小二乘法
+
+![image-20210530145812291](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530145812291.png)
+
+![image-20210530150354358](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530150354358.png)
+
+![image-20210530150546299](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530150546299.png)
+
+![image-20210530150641594](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530150641594.png)
+
+![image-20210530150651052](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210530150651052.png)
+
+#### 正交投影
+
