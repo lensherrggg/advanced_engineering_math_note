@@ -389,3 +389,89 @@ Schmidt正交化是把非正交基变为正交基
 
 #### 正交投影
 
+![image-20210601191507031](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601191507031.png)
+
+#### 酉矩阵
+
+![image-20210601191557761](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601191557761.png)
+
+![image-20210601191605134](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601191605134.png)
+
+![image-20210601192146371](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601192146371.png)
+
+![image-20210601192208725](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601192208725.png)
+
+![image-20210601192226967](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601192226967.png)
+
+#### 酉相似
+
+![image-20210601194549159](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601194549159.png)
+
+![image-20210601194558193](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601194558193.png)
+
+#### 酉相似对角化
+
+![image-20210601194819458](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601194819458.png)
+
+![image-20210601194827897](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601194827897.png)
+
+![image-20210601195039816](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601195039816.png)
+
+### Hermite矩阵，反Hermite矩阵及酉矩阵的特性
+
+![image-20210601195233861](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601195233861.png)
+
+#### 酉相似对角化方法
+
+![image-20210601195834885](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601195834885.png)
+
+![image-20210601195844914](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601195844914.png)
+
+### Hermite二次型
+
+![image-20210601200249277](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200249277.png)
+
+![image-20210601200256938](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200256938.png)
+
+![image-20210601200305988](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200305988.png)
+
+![image-20210601200316322](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200316322.png)
+
+![image-20210601200323763](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200323763.png)
+
+![image-20210601200328853](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200328853.png)
+
+#### 正定Hermite二次型与正定Hermite矩阵
+
+![image-20210601200401634](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200401634.png)
+
+![image-20210601200407379](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200407379.png)
+
+![image-20210601200413391](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200413391.png)
+
+![image-20210601200418854](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200418854.png)
+
+![image-20210601200423312](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200423312.png)
+
+## 向量与矩阵的范数
+
+### 向量的范数
+
+![image-20210601200533710](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200533710.png)
+
+![image-20210601200629999](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601200629999.png)
+
+![image-20210601201254689](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201254689.png)
+
+![image-20210601201400778](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201400778.png)
+
+#### 几个著名的不等式
+
+![image-20210601201422172](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201422172.png)
+
+![image-20210601201907458](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201907458.png)
+
+![image-20210601201916071](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201916071.png)
+
+![image-20210601201926037](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201926037.png)
+
