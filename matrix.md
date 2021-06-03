@@ -475,3 +475,37 @@ Schmidt正交化是把非正交基变为正交基
 
 ![image-20210601201926037](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210601201926037.png)
 
+### $C^n$上的向量范数
+
+![image-20210603115328880](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603115328880.png)
+
+![image-20210603115828846](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603115828846.png)
+
+### 有限维线性空间上范数的等价性
+
+![image-20210603120240996](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603120240996.png)
+
+![image-20210603120712027](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603120712027.png)
+
+## 矩阵的范数
+
+### 矩阵范数的定义
+
+![image-20210603121624106](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603121624106.png)
+
+![image-20210603121845899](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603121845899.png)
+
+![image-20210603122029646](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603122029646.png)
+
+![image-20210603122304809](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603122304809.png)
+
+### 矩阵范数与向量范数的相容性
+
+![image-20210603122527239](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603122527239.png)
+
+![image-20210603122801728](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603122801728.png)
+
+![image-20210603123023516](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603123023516.png)
+
+![image-20210603142003508](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603142003508.png)
+
