@@ -205,6 +205,8 @@ $$
 
 ![image-20210529101611834](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210529101611834.png)
 
+注：初等因子是不变b因子分解而成的
+
 #### 行列式因子
 
 ![image-20210529101701048](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210529101701048.png)
@@ -508,4 +510,54 @@ Schmidt正交化是把非正交基变为正交基
 ![image-20210603123023516](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603123023516.png)
 
 ![image-20210603142003508](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210603142003508.png)
+
+![image-20210606132625268](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606132625268.png)
+
+## 矩阵的分解
+
+### 矩阵的满秩分解
+
+![image-20210606132757351](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606132757351.png)
+
+![image-20210606134343705](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606134343705.png)
+
+### 矩阵的正三角分解
+
+![image-20210606140257017](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606140257017.png)
+
+![image-20210606142324292](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142324292.png)
+
+![image-20210606142333286](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142333286.png)
+
+![image-20210606142342891](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142342891.png)
+
+![image-20210606142352861](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142352861.png)
+
+![image-20210606142535001](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142535001.png)
+
+![image-20210606142604207](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142604207.png)
+
+### 矩阵的奇异值分解
+
+![image-20210606142945503](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142945503.png)
+
+![image-20210606142956544](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606142956544.png)
+
+![image-20210606143351025](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606143351025.png)
+
+![image-20210606143403082](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606143403082.png)
+
+![image-20210606143621652](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606143621652.png)
+
+![image-20210606143645669](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606143645669.png)
+
+![image-20210606143740622](https://cdn.jsdelivr.net/gh/lensherrggg/cloudimg@main/image-20210606143740622.png)
+
+求解奇异值分解式：
+
+计算$AA^H$的特征值，得到奇异值，然后计算每个特征值对应的标准正交特征向量组成$V$。
+
+再计算$A^HA$的标准正交特征向量，得到$U$
+
+最后得到分解式。
 
